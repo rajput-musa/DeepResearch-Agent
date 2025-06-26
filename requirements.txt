@@ -1,0 +1,9 @@
+gradio
+python-dotenv
+pydantic
+google-generativeai
+tavily-python
+numpy
+faiss-cpu
+langchain
+sentence-transformers
