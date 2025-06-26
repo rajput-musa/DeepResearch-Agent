@@ -1,16 +1,19 @@
-# Mini-DeepSearch-Agent
+# DeepSearch-Agent
 
-Mini-DeepSearch-Agent is a Python-based research agent that uses AI to conduct in-depth research and generate comprehensive reports. It takes a research topic, asks clarifying questions, and then performs multi-step research to create a detailed report that can be downloaded as a PDF.
+A Multi-step autonomous research agent. It takes a high-level user query, interactively refines the research scope, dynamically plans a report outline, gathers information from the web, and writes a comprehensive, cited report in Markdown
 
-This agent is built using Gradio for the user interface, and leverages Google's Gemini models for language understanding and generation, and the Tavily API for web searches.
+It uses Tavily API for web search/scraping and Gemini AI API for LLM.
 
 ## Features
 
--   **Interactive Research Process**: The agent starts by asking clarifying questions to better understand the user's request.
--   **Multi-Step Research**: It formulates a research brief, creates a plan, and expands on an outline to cover the topic in depth.
--   **RAG Pipeline**: Utilizes a Retrieval-Augmented Generation (RAG) pipeline to gather and process information.
--   **PDF Report Generation**: The final report can be exported as a professional-looking PDF document.
--   **Web-based UI**: A simple and clean user interface built with Gradio.
+
+-   **Human-in-the-Loop:** Starts by asking clarifying questions to narrow down the user's intent.
+-   **Dynamic Outline Planning:** Generates a structured report outline based on initial search results, then expands each section with key questions.
+-   **Deep Research:** Performs targeted, deep-dive searches for each section of the report.
+-   **Retrieval-Augmented Generation (RAG):** Chunks and embeds research content into a vector store (FAISS) to find the most relevant information for writing.
+-   **Source Citation:** Meticulously cites every factual statement, linking it back to the source URL.
+-   **Context-Aware Writing:** Keeps track of previously written sections to maintain flow and avoid repetition.
+-   **PDF Export:** Converts the final Markdown report into a high-quality, well-formatted PDF with a table of contents using Pandoc and LaTeX.
 
 ## Getting Started
 
@@ -50,7 +53,7 @@ This agent is built using Gradio for the user interface, and leverages Google's 
     ```
 
     You can get your API keys from:
-    -   [Google AI Studio](https://makersuite.google.com/app/apikey)
+    -   [Google AI Studio](https://aistudio.google.com/app/apikey)
     -   [Tavily](https://tavily.com/)
 
 ### Running the Application
