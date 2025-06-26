@@ -4,6 +4,14 @@ A Multi-step autonomous research agent. It takes a high-level user query, intera
 
 It uses Tavily API for web search/scraping and Gemini AI API for LLM.
 
+# Live Demo
+
+Deployed on [Hugging Spaces](https://huggingface.co/spaces/MusaR/Mini-DeepResearch-Agent)
+
+![image](https://github.com/user-attachments/assets/8fa82b4f-c67d-49d2-b186-2a4027c0dd12)
+
+The UI is barebones, but it works.
+
 ## Features
 
 
