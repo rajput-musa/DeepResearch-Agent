@@ -1,0 +1,22 @@
+# Environment variables
+.env
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# IDE specific
+.vscode/
+.idea/
+
+# Virtual environment
+venv/
+venv
+
+# Gradio cache
+.gradio/
+
+# Temporary files from agent
+temp_report.md
+*_Report.pdf 
